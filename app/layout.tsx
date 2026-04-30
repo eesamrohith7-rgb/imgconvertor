@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     default: "Image Converter & Enhancer | Free Online Photo Editor",
     template: "%s | Image Converter & Enhancer",
   },
+  icons: {
+    icon: "/icon.png",
+  },
   description:
     "Convert images between PNG, JPEG, WebP, GIF, AVIF, BMP formats instantly. Apply professional edits like brightness, contrast, saturation, hue, blur and more. Free, fast, and works entirely in your browser.",
   keywords: [
