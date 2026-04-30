@@ -15,16 +15,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://imgconvertor.online"),
   title: {
-    default: "Image Converter & Enhancer | Free Online Photo Editor",
-    template: "%s | Image Converter & Enhancer",
+    default: "ImgConvertor - Free Online Image Converter",
+    template: "%s | ImgConvertor",
   },
   icons: {
     icon: "/icon.png",
   },
   description:
-    "Convert images between PNG, JPEG, WebP, GIF, AVIF, BMP formats instantly. Apply professional edits like brightness, contrast, saturation, hue, blur and more. Free, fast, and works entirely in your browser.",
+    "Convert images between PNG, JPEG, WebP, GIF, AVIF, BMP formats instantly. Apply professional edits like brightness, contrast, saturation, hue, blur and more. Fast, free, and works entirely in your browser.",
   keywords: [
     "image converter",
     "image enhancer",
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     "online photo editor",
     "image compression",
   ],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  authors: [{ name: "Rohith" }],
+  creator: "Rohith",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourdomain.com",
-    siteName: "Image Converter & Enhancer",
-    title: "Image Converter & Enhancer | Free Online Photo Editor",
+    url: "https://imgconvertor.online",
+    siteName: "ImgConvertor",
+    title: "ImgConvertor - Free Online Image Converter",
     description:
       "Convert images between formats and apply professional edits. Free, fast, and private — all processing happens in your browser.",
     images: [
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Image Converter & Enhancer | Free Online Photo Editor",
+    title: "ImgConvertor - Free Online Image Converter",
     description:
       "Convert images between formats and apply professional edits. Free, fast, and private.",
     images: ["/api/og"],
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "SBZGWGrbWs5o1zdTihKapFBWq6k1JD7",
   },
 };
 
