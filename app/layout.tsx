@@ -106,6 +106,22 @@ export default function RootLayout({
           </div>
         </header>
         <main className="flex-1">{children}</main>
+        <footer className="border-t bg-white/70">
+          <div className="max-w-5xl mx-auto px-4 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm text-gray-600">
+            <p>Image Converter &amp; Enhancer</p>
+            <nav className="flex items-center gap-4">
+              <Link href="/privacy-policy" className="hover:text-gray-900 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms-and-conditions"
+                className="hover:text-gray-900 transition-colors"
+              >
+                Terms and Conditions
+              </Link>
+            </nav>
+          </div>
+        </footer>
       </body>
     </html>
   );
