@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import ImageUploader from '@/components/ImageUploader';
 import ImagePreview from '@/components/ImagePreview';
 import EnhancementControls from '@/components/EnhancementControls';
@@ -40,13 +41,27 @@ export default function Home() {
       />
       <div className="min-h-screen bg-gray-50 py-12 px-4">
         <div className="max-w-5xl mx-auto space-y-8">
-          <header className="text-center">
-            <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-              Image Converter & Enhancer
-            </h1>
-            <p className="text-gray-600 mt-2">
-              Convert formats and adjust brightness, contrast, blur, and saturation
-            </p>
+          <header className="text-center space-y-4">
+            <div className="flex justify-center">
+              <div className="rounded-2xl bg-white shadow-sm border border-gray-200 p-3">
+                <Image
+                  src="/Gemini_Generated_Image_rnogjrnogjrnogjr.png"
+                  alt="Image Converter & Enhancer logo"
+                  width={72}
+                  height={72}
+                  className="h-18 w-18 object-contain"
+                  priority
+                />
+              </div>
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                Image Converter & Enhancer
+              </h1>
+              <p className="text-gray-600 mt-2">
+                Convert formats and adjust brightness, contrast, blur, and saturation
+              </p>
+            </div>
           </header>
 
           {!file ? (

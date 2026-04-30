@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -85,7 +87,23 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <header className="bg-white/50 backdrop-blur-sm border-b">
+          <div className="max-w-5xl mx-auto flex items-center gap-4 py-4 px-4">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/Gemini_Generated_Image_rnogjrnogjrnogjr.png"
+                alt="Site logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain"
+              />
+              <span className="text-lg font-semibold">Image Converter & Enhancer</span>
+            </Link>
+          </div>
+        </header>
+        <main className="flex-1">{children}</main>
+      </body>
     </html>
   );
 }
